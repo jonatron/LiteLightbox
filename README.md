@@ -32,7 +32,6 @@ I needed a small and lightweight lightbox that mimicked Wikipedia's to use in a 
 
 ## TODO (= Cons)
 - Figure out if it's acceptably accessible (it probably is! I think)
-- Allow for multiple galleries
 - Opening things other than images
 
 ## Browser compatibility

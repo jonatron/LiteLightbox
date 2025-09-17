@@ -116,13 +116,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		// Otherwise, if this image IS part of a gallery
 		else {
 			// Get all gallery items
-			// TODO: different gallery types (via [data-llb-gallery="type"])
 			const gallery_items = [...document.querySelectorAll("[data-llb-gallery]")];
 			// Initialize some flags
 			let has_found_us = false;
 			let previous_anchor = null;
 			let next_anchor = null;
 			for(const element of gallery_items) {
+				if(element.dataset.llbGallery != data.llbGallery) {
+					continue;
+				}
 				// If we've found the image that triggered this check
 				if(element === anchor) {
 					// Toggle a flag, and continue
